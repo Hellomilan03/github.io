@@ -49,6 +49,7 @@
     .icon-row {
         display: flex;
         justify-content: center;
+        align-items: flex-start;
         gap: 40px;
         flex-wrap: wrap;
     }
@@ -69,6 +70,18 @@
         color: white;
         font-size: 14px;
     }
+
+    .github-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .small-icon img {
+        width: 70px;
+        height: 70px;
+    }
 </style>
 </head>
 
@@ -80,31 +93,59 @@
 
     <div class="icon-row">
 
+        <!-- YouTube -->
         <a class="icon-link"
            href="https://www.youtube.com/@hellomilan03/featured"
-           target="_blank">
-            <img src="images/youtube.png" alt="YouTube">
+           target="_blank"
+           rel="noopener noreferrer">
+            images/youtube.png
             <div class="icon-label">YouTube</div>
         </a>
 
+        <!-- Facebook -->
         <a class="icon-link"
            href="https://www.facebook.com/hellomilan03"
-           target="_blank">
-            <img src="images/facebook.png" alt="Facebook">
+           target="_blank"
+           rel="noopener noreferrer">
+            images/facebook.png
             <div class="icon-label">Facebook</div>
         </a>
 
-        <a class="icon-link"
-           href="https://github.com/Hellomilan03"
-           target="_blank">
-            <img src="images/github.png" alt="GitHub">
-            <div class="icon-label">GitHub</div>
-        </a>
+        <!-- GitHub Column -->
+        <div class="github-column">
 
+            <a class="icon-link"
+               href="https://github.com/Hellomilan03"
+               target="_blank"
+               rel="noopener noreferrer">
+                images/github.png
+                <div class="icon-label">GitHub</div>
+            </a>
+
+            <a class="icon-link small-icon"
+               href="https://hellomilan03.github.io/HP15C-style-HTML-Calculator-Milan-Greenman/"
+               target="_blank"
+               rel="noopener noreferrer">
+                images/calc.png
+                <div class="icon-label">HP-15C</div>
+            </a>
+
+            <a class="icon-link small-icon"
+               href="https://hellomilan03.github.io/Pong/"
+               target="_blank"
+               rel="noopener noreferrer">
+                images/pong.png
+                <div class="icon-label">Pong</div>
+            </a>
+
+        </div>
+
+        <!-- Printables -->
         <a class="icon-link"
            href="https://www.printables.com/@TheGreenmanS_1381837"
-           target="_blank">
-            <img src="images/printables.png" alt="Printables">
+           target="_blank"
+           rel="noopener noreferrer">
+            images/printables.png
             <div class="icon-label">Printables</div>
         </a>
 
